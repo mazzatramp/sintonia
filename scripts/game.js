@@ -36,8 +36,9 @@ function check() {
   } else {
     outcome_text.innerHTML = "Meglio che vi risintonizziate...";
   }
+  
   //Bottone "Prossimo Turno"
-  outcome_text.innerHTML += "  <button type='button' class='btn btn-primary btn-sm' onclick='newTurn()'> Prossimo turno </button>";
+  outcome_text.innerHTML += " <button type='button' class='btn btn-primary btn-sm' onclick='newTurn()'> Prossimo turno </button>";
   checkSecond(error);
   refreshPoints();
   showSolution();
