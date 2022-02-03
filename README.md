@@ -1,2 +1,2 @@
-# sintonia
+# Sintonia
 Wavelength clone
