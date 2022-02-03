@@ -9,7 +9,7 @@ var solution;
 var gradientSolution;
 var turn;
 var nOpposites;
-//
+
 function currentTeam() {
   if (turn % 2 == 1)
     return "sx";
