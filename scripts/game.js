@@ -1,4 +1,4 @@
-var slider = document.getElementById("slider");
+var slider = document.getElementById("solutionSlider");
 var outcome_text = document.getElementById("outcome-text");
 var guessButton = document.getElementById("guess-btn");
 var teams = {

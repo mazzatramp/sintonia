@@ -91,6 +91,7 @@ a:hover {
     width: 78%;
     margin: 0 11%;
 }
+
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;

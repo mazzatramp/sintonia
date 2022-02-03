@@ -1,28 +1,28 @@
 <!--
 author: Filippo Mazzarotto
-versione: 1.0.0
+versione: 0.1.0
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    
+    <meta name="description" content="wavelenght clone">
+    <meta name="author" content="mazzatramp">
 
-    <title>Wavelength Game</title>
+    <title>Sintonia</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/examples/starter-template/starter-template.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <a class="navbar-brand" href="#">Wavelenght</a>
       <ul class="nav nav-pills">
         <li class="nav-item active">
           <a class="nav-link" onclick="newGame()">Nuovo gioco</a>
@@ -46,14 +46,14 @@ versione: 1.0.0
           <h2 id="points-sx">0</h2>
         </div>
         <div class="col-md-6">
-          <h1 class="title">Wavelength</h1>
+          <h1 class="title">Sintonia</h1>
         </div>
         <div class="col-sm-3">
           <h2 id="points-dx">0</h2>
         </div>
       </div>
 
-      <input class="slider" id="slider" type="range" min="1" max="100" value="50">
+      <input class="slider" id="solutionSlider" type="range" min="1" max="100" value="50">
 
       <div class="">
         <div class="opposites_card">
