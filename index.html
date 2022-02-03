@@ -1,0 +1,109 @@
+<!--
+author: Filippo Mazzarotto
+versione: 1.0.0
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Wavelength Game</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/examples/starter-template/starter-template.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <a class="navbar-brand" href="#">Wavelenght</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item active">
+          <a class="nav-link" onclick="newGame()">Nuovo gioco</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" onclick="newTurn()">Prossimo turno</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" onclick="newCards()">Cambia carte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="showSolutionTemp(2)">Sbircia soluzione</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-3">
+          <h2 id="points-sx">0</h2>
+        </div>
+        <div class="col-md-6">
+          <h1 class="title">Wavelength</h1>
+        </div>
+        <div class="col-sm-3">
+          <h2 id="points-dx">0</h2>
+        </div>
+      </div>
+
+      <input class="slider" id="slider" type="range" min="1" max="100" value="50">
+
+      <div class="">
+        <div class="opposites_card">
+          <div class="left_card text-center">
+            <h3 id="left_card_text"></h3>
+          </div>
+          <div class="right_card text-center">
+            <h3 id="right_card_text"></h3>
+          </div>
+        </div>
+        <h5 class="guess"> Pensiamo sia più <button id="guess-btn" type="button" class="btn btn-danger" onclick="changeGuessButton()">Destra</button></h5>
+      </div>
+
+      <div id="outcome">
+        <button type="button" class="btn btn-primary" onclick="check()">Rivela</button>
+        <h3 id="outcome-text"></h3>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-4">
+          <h3 class="teamname-sx">Squadra Verde</h3>
+          <ul id="team-list-sx" class="list-group">
+          </ul>
+          <input id="add-member-sx" type="text" class="form-control" placeholder="Nuovo Membro">
+          <button id="add-member-btn-sx" type="button" class="btn btn-primary btn-sm" onclick="addMember('sx')"><i class="bi-plus"></i></button>
+          <button type="button" class="btn btn-primary btn-sm" onclick="removeMember('sx')"><i class="bi-trash"></i></button>
+        </div>
+        <div class="col-sm-4">
+          <h3 class="teamname-dx">Squadra Rossa</h3>
+          <ul id="team-list-dx" class="list-group">
+          </ul>
+          <input id="add-member-dx" type="text" class="form-control" placeholder="Nuovo Membro">
+          <button id="add-member-btn-dx" type="button" class="btn btn-primary btn-sm" onclick="addMember('dx')"><i class="bi-plus"></i></button>
+          <button type="button" class="btn btn-primary btn-sm" onclick="removeMember('dx')"><i class="bi-trash"></i></button>
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+      </div>
+
+    </div> <!-- /.container -->
+
+    <script src="scripts/opposites_list.js" charset="utf-8"></script>
+    <script src="scripts/game.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  </body>
+</html>
