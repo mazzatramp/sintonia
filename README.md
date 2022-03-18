@@ -1,4 +1,4 @@
 # Sintonia
 Wavelength clone
 
-Ciao Peitro
+Ciao Pietro
